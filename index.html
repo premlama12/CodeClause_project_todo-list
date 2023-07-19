@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <div class="container">
+    <form action="#" method="POST">
+      <input type="text" name="task" id="taskInput" placeholder="Enter a task">
+      <select name="reminder" id="reminderSelect">
+        <option value="none">No Reminder</option>
+        <option value="1">1 minutes</option>
+        <option value="5">5 minutes</option>
+        <option value="10">10 minutes</option>
+        <option value="15">15 minutes</option>
+        <option value="60">1 hours</option>
+        <!-- Add more options as needed -->
+      </select>
+      <select id="reminderMusicSelect">
+        <option value="song.mp3">Music 1</option>
+        <option value="song2.mp3">Music 2</option>
+        <option value="song3.mp3">Music 3</option>
+        <!-- Add more options as needed -->
+      </select>
+      <button type="submit" id="addTaskBtn">Add Task</button>
+      <button id="terminateBtn">Terminate</button>
+    </form>
+    <ul id="taskList"></ul>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

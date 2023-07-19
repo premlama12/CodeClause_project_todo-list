@@ -1,0 +1,104 @@
+body {
+    background: linear-gradient(45deg, #00c3ff, #ffff1c, #ff00a8);
+    background-size: 600% 600%;
+    animation: animatedBackground 10s ease infinite;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(10, 10, 10, 0.219);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .container:hover {
+    transform: scale(1.05);
+  }
+  
+  h1 {
+    font-family: "Arial", sans-serif;
+    font-size: 36px;
+    color: #333;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background: #45a049;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+  }
+  
+  span {
+    margin-right: 10px;
+  }
+  
+  @keyframes animatedBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+  #reminderSelect {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  #reminderSelect  option{
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  #reminderMusicSelect {
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  #reminderMusicSelect option{
+    display: block;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+  
